@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Grafuri orientate</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/theme.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" href="images/logo2.png" />
+				<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+		 <style>
+	  #btnScrollToTop{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	height: 50px;
+	vertical-align: middle; 
+    text-align: center;
+	border-radius: 50%;
+	background: #FF3737;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+	color: #ffffff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+	#btnScrollToTop:hover{
+		background: #D41A1A;
+	}
+
+
+</style>
+<style>
+.container {
+  line-height: 1.4;
+  text-align: center;
+  padding: 44px;
+  color: #333;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 18px;
+}
+p small {
+  font-size: 80%;
+  color: #666;
+}
+
+.highlight-container, .highlight {
+  position: relative;
+}
+
+.highlight-container {
+  display: inline-block;
+}
+.highlight-container:before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 110%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: #e85433;
+  top: -1px;
+  left: -1px;
+  border-radius: 20% 25% 20% 24%;
+  padding: 10px 3px 3px 10px;
+}
+</style>
+	</head>
+	<body class="is-preload">
+			<button id="btnScrollToTop">
+		<i class="material-icons">arrow_upward</i>
+					</button> 
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt style2">
+					<img src="images/logo2.png"/>
+						<a href="index.html" class="logo"><strong>Grafuri</strong></a>
+						<nav>
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+					        <input type="checkbox" id="checkbox" />
+							<i class="fas fa-moon fa-2x fa-hover-hidden"></i>
+							<i class="far fa-moon fa-2x fa-hover-show"></i></label> </div>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+						<li><a href="index.html">Pagina principal&#259</a></li>
+							<li><a href="landing.html">Ce este un graf?</a></li>
+							<li><a href="generic.html">Grafuri neorientate</a></li>
+							<li><a href="mivc.html">Grafuri orientate</a></li>
+							<li><a href="pb.html">Aplicații ale grafurilor</a></li>
+							<li><a href="bibliografie.html">Bibliografie</a></li>
+							<li><a href="despre.html">Arbori</a></li>
+						</ul>
+					</nav>
+
+				<!-- Section -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/pic07.jpg" alt="" />
+							</span>
+							<header class="major">
+										<h1>Grafuri orientate</h1>
+							</header>
+							<div class="content">
+								<p></p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+<div class="inner">
+									
+<p><header>
+	<h2>1. Caracteristici și proprietăți</h2> 
+</header>
+<b>nod/vârf</b> = element al mulţimii X; poate fi reprezentat în plan printr–un punct (cerc etc.), eventual
+numerotat; </br> </br>
+<b> arc </b> = pereche ordonată de noduri; poate fi reprezentată în plan printr–o săgeată orientată </br> </br>
+<b>adiacenţă</b> = proprietatea a două noduri de a fi unite prin muchie; dacă [x,y] &#8714; U, spunem că nodurile x şi y
+sunt adiacente; </br></br>
+<b>incidenţă</b> = proprietatea unei muchii de a uni două noduri; dacă [x,y] &#8714; U, spunem că muchia este incidentă
+cu nodurile x şi y; </br></br>
+<b>gradul intern al nodului x</b> = numărul de arce care intră în nodul x, notat cu d<sup>-</sup>(x) </br></br>
+<b>gradul extern al nodului x</b> = numărul de arce care ies din nodul x, notat cu d<sup>+</sup>(x) </br></br>
+<ul>
+<li> nod izolat = nod cu gradul intern și extern 0</li>
+</ul>
+<b>Observaţie</b>: În orice graf orientat cu n noduri şi m arce, are loc egalitatea: </br>
+<div class="container">
+  <span class="highlight-container"><span class="highlight"> suma gradelor interioare = suma gradelor exterioare = numărul de arce </span></br> </br>
+</div>
+<b>drum</b> = succesiune de noduri cu proprietatea că oricare două noduri consecutive sunt adiacente (arcele
+pastreaza aceeasi orientare);
+<ul>
+<li>drum simplu = drum în care fiecare arc apare o singură dată dar nodurile se pot repeta</li>
+<li>drum elementar = drum în care nodurile sunt distincte</li>
+</ul> </br>
+<b>circuit</b> = drum în care primul nod coincide cu ultimul;
+<ul>
+<li>circuit simplu = circuit în care fiecare arc apare o singură dată dar nodurile se pot repeta</li>
+<li>circuit elementar = circuit în care nodurile sunt distincte, cu excepţia primului şi ultimului nod</li>
+</ul>
+<b> lungimea unui drum/circuit </b>= numărul de arce din care este format; </br></br>
+<b>graf parţial</b> = graf care se obţine din graful iniţial prin eliminarea unor arce, nu şi a nodurilor; </br></br>
+<b>subgraf</b> = graf care se obţine din graful iniţial prin eliminarea unor noduri şi a tuturor arcelor care au o
+extremitate în nodurile eliminate; nu pot fi eliminate alte arce decât cele cu legătură cu nodurile eliminate; </br></br>
+<b> Numărul grafurilor orientate cu n vârfuri este 2 <sup> n(n-1)/2 </sup>. </b></br></br>
+<h2>2. Tipuri particulare de grafuri</h2> 
+<ul>
+<li> <b> graf plin </b> = graf în care intre orice două noduri distincte x si y exista arc dus-întors (x, y) si (y, x)</li>
+<li> <b> graf complet </b>  = graf în care orice două noduri distincte sunt adiacente; (nu este unic, numarul de arce este
+cel mult n(n-1))
+ </li>
+</br>
+&emsp;&emsp; &emsp; <ol> <h3> Observații: </h3> <li> Numărul de arce într-un graf plin = n(n–1) </li> 
+&emsp;&emsp; &emsp;  <li> Numărul grafurilor orientate cu n vârfuri este 2<sup>n(n-1)</sup>= 4<sup>n(n-1)/2</sup> </li> 
+&emsp;&emsp; &emsp; <li>Numărul grafurilor orientate COMPLETE cu n vârfuri (există cel puțin un arc între oricare două
+noduri) este 3 <sup> n(n-1) </sup> </li> </ol>
+<li> <b> graf tare conex </b>= graf în care nu există nici un ciclu </li>
+<li> <b> componentă tare conexă </b>= oricare ar fi două noduri distincte x si y, există drum DUS-ÎNTORS de la x la y </li>
+<li> <b> componentă conexă </b>= un subgraf tare conex şi maximal în raport cu această proprietate (nu există
+drum între un nod din subgraf şi un nod care nu aparţine subgrafului) </li>
+</br> 
+Observație: un nod izolat constituie o componentă tare conexă. </br>
+</ul>
+<h2>3. Metode de reprezentare a grafurilor orientate în memorie</h2> 
+<ol>
+<li> <u> <h4> Matricea de adiacență </h4> </u> </li> </br>
+<img src="matrice_de_adiacenta.png" alt="1"> </br></br>
+<div>Matricea de adiacenţă nu este simetrică faţă de diagonala principală. Numărul de elemente 1 din matricea de 
+adiacenţă este egală cu numărului de arce din graf. Suma elementelor de pe linia x a matricei de adiacenţă este egal
+ă cu gradul exterior al nodului x. Suma elementelor de pe coloana x a matricei de adiacenţă este egală cu gradul 
+interior al nodului x.  </div> </br>
+<li> <u> <h4> Listele de adiacenţă </h4> </u> </li>
+<img src="liste_de_adiacenta2.png" alt="1"> </br></br> 
+<li> <u> <h4> Listele de arce </h4> </u> </li>
+<img src="liste_de_arce.png" alt="1"> </br></br>
+</div>
+
+<section id="buton">
+								<div class="inner">
+									<header class="major">
+									</header>
+									<p></p>
+									<ul class="actions">
+										<li><a href="pb.html" class="button next">Aplicații ale grafurilor</a></li>
+									</ul>
+								</div>
+							</section>
+							
+				</div>
+</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://www.pbinfo.ro/" class="fas fa-code" target="_blank"><span class="label">Pbinfo</span></a></li>
+								<li><a href="http://www.codeblocks.org/" target="_blank"> <span class="label"><img src="https://img.icons8.com/officel/25/000000/code.png"/> Code::Blocks</span></a></li>
+								<li><a href="https://invata.info/" target="_blank"><span class="label"><img src="https://img.icons8.com/ios-filled/25/000000/c-plus-plus-logo.png"/>Info</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; Grafuri - atestat la informatică</li><li>Template: <a href="https://html5up.net" target="_blank">HTML5 UP</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/theme.js"></script>
+			<script src="assets/js/animatie_matrice.js"></script>
+						<script>
+
+			mybutton = document.getElementById("btnScrollToTop");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+				  mybutton.style.display = "block";
+				 } else {
+				mybutton.style.display = "none";
+			 }
+			}
+			btnScrollToTop.addEventListener("click", function (){
+				window.scrollTo({
+				left: 0,
+				top: 0,
+				behavior: "smooth"});
+			});
+			</script>
+	</body>
+</html>
